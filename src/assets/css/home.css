@@ -34,12 +34,9 @@ footer {
 
 .content-form {
     background: #f8f4e5;
-    padding: 50px 100px;
+    padding: 20px 20px 20px 20px;
     border-top: 10px solid #0293f4;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    margin-left: 150px;
+    margin: 20px 20px 20px 20px;
 }
 
 .cards-list {
@@ -54,5 +51,11 @@ footer {
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
+    }
+    .content-form {
+        background: #f8f4e5;
+        padding: 20px 20px 20px 20px;
+        border-top: 10px solid #0293f4;
+        margin: 20px 20px 20px 20px;
     }
 }

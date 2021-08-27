@@ -3,7 +3,7 @@ import logo from '../../logo.svg';
 import { Navbar, Nav, Container } from "react-bootstrap";
 const HeaderComponent = () => {
   return (
-    <header class="p-3 bg-dark text-white">
+    <header className="p-3 bg-dark text-white">
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="/">
