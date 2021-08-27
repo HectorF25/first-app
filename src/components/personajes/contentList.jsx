@@ -6,7 +6,7 @@ import images from "../../assets/img/index";
 const PersonajesContent = () => {
   const [data, setData] = useState([]);
 
-  const fetchData = async () => {
+  const fetchDataPersonajes = async () => {
     try {
       const response = await axios.get("https://swapi.dev/api/people/");
       setData(response?.data.results);
@@ -16,14 +16,14 @@ const PersonajesContent = () => {
   };
 
   useEffect(() => {
-    fetchData();
+    fetchDataPersonajes();
   }, []);
 
   const mapData = () => {
     if (data && data.length > 0) {
       return (
         <Row xs={1} md={4} className="g-4">
-        {data.map((item,itemImg) => (
+        {data.map((item,itemImg,itemP) => (
           <Col>
             <Fragment key={item.name}>
               <Card style={{ width: "18rem" }}>
@@ -33,10 +33,10 @@ const PersonajesContent = () => {
                   <Card.Text>
                     Info Personaje.
                     <br />
-                    La edad es: {item.birth_year}.<br />
+                    La fecha de nacimiento es: {item.birth_year}.<br />
                     El planeta al que pertenece es: {item.homeworld}
                     <br />
-                    El genero es: {item.birth_year}.
+                    El genero es: {item.gender}.
                   </Card.Text>
                 </Card.Body>
               </Card>
