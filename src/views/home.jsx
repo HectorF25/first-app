@@ -6,7 +6,7 @@ import '../css/home.css';
 
 function Home() {
     return(
-    <div className="contendeor">
+    <div className="contenedor">
         <HeaderComponent/>
         <NuevoElemento/>
         <FooterComponent/>

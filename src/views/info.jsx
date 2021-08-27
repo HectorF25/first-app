@@ -5,7 +5,7 @@ import '../css/home.css';
 
 function Info() {
     return(
-    <div className="contendeor">
+    <div className="contenedor">
         <HeaderComponent/>
         <FooterComponent/>
     </div>
