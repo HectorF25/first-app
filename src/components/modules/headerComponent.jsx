@@ -21,7 +21,7 @@ const HeaderComponent = () => {
             <Nav className="me-auto">
               <Nav.Link href="/estudiantes">Estudiantes</Nav.Link>
               <Nav.Link href="/personajes">Personajes</Nav.Link>
-              <Nav.Link href="https://github.com/hectorf25">GitHub</Nav.Link>
+              <Nav.Link href="https://github.com/hectorf25" target="_blank">GitHub</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
