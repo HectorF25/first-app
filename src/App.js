@@ -1,14 +1,16 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom'; 
 import Home from './views/home';
-import Info from './views/info';
+import EstudiantesView from './views/estudiantes';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import PersonajesView from './views/personajes';
 
 
 function App() {
   return (
     <Router>
       <Route component={Home} path={'/home'} />
-      <Route component={Info} path={'/info'} />
+      <Route component={EstudiantesView} path={'/estudiantes'} />
+      <Route component={PersonajesView} path={'/personajes'} />
     </Router>
   );
 }

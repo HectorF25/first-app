@@ -22,8 +22,8 @@ footer {
     position: absolute;
 }
 
-.container2 {
-    padding-bottom: 300px
+.contenedor {
+    padding-bottom: 250px
 }
 
 @media (min-width: 768px) {
