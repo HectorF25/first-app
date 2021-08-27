@@ -6,7 +6,7 @@ const HeaderComponent = () => {
     <header class="p-3 bg-dark text-white">
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/home">
+          <Navbar.Brand href="/">
             <img
               alt=""
               src={logo}

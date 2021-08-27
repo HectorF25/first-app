@@ -6,7 +6,7 @@ const Content = (props) => {
     data: { id, name, age, gender, selected },
   } = props;
   return (
-    <Fragment>
+    <Fragment> 
       {}
       <label className="estudent new-item">
         {}

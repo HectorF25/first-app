@@ -26,6 +26,31 @@ footer {
     padding-bottom: 250px
 }
 
+.titlePage {
+    background-color: #32c3e7;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.content-form {
+    background: #f8f4e5;
+    padding: 50px 100px;
+    border-top: 10px solid #0293f4;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.cards-list {
+    padding-top: 10px;
+}
+
+.card {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;

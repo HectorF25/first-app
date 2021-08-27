@@ -21,7 +21,7 @@ const EstudentList = (props) => {
     <ContentList key={item.id} data={item} onChange={onChangeStatus} />
   ));
   return (
-    <div className="estudiante-list">
+    <div className="content-form">
       {}
       {list.length ? contlist : "No hay estudiantes"}
       {}

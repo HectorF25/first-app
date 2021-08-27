@@ -8,7 +8,7 @@ import PersonajesView from './views/personajes';
 function App() {
   return (
     <Router>
-      <Route component={Home} path={'/home'} />
+      <Route exact path={'/'} component={Home} />
       <Route component={EstudiantesView} path={'/estudiantes'} />
       <Route component={PersonajesView} path={'/personajes'} />
     </Router>

@@ -1,60 +1,7 @@
 import React, { useState, useEffect, Fragment } from "react";
 import axios from "axios";
-import { Card } from "react-bootstrap";
-import images from "../../assets/img";
-
-const imagenes = [
-  {
-    id: 1,
-    title: "Imagen personaje 1",
-    img: "1.png",
-  },
-  {
-    id: 2,
-    title: "Imagen personaje 1",
-    img: "2.png",
-  },
-  {
-    id: 3,
-    title: "Imagen personaje 2",
-    img: "3.png",
-  },
-  {
-    id: 4,
-    title: "Imagen personaje 4",
-    img: "4.png",
-  },
-  {
-    id: 5,
-    title: "Imagen personaje 5",
-    img: "5.png",
-  },
-  {
-    id: 6,
-    title: "Imagen personaje 6",
-    img: "6.png",
-  },
-  {
-    id: 7,
-    title: "Imagen personaje 7",
-    img: "7.png",
-  },
-  {
-    id: 8,
-    title: "Imagen personaje 8",
-    img: "8.png",
-  },
-  {
-    id: 9,
-    title: "Imagen personaje 9",
-    img: "9.png",
-  },
-  {
-    id: 10,
-    title: "Imagen personaje 10",
-    img: "10.png",
-  },
-];
+import { Card, Row, Col } from "react-bootstrap";
+import images from "../../assets/img/index";
 
 const PersonajesContent = () => {
   const [data, setData] = useState([]);
@@ -75,12 +22,13 @@ const PersonajesContent = () => {
   const mapData = () => {
     if (data && data.length > 0) {
       return (
-        <>
-          {data.map((item) => (
+        <Row xs={1} md={4} className="g-4">
+        {data.map((item,itemImg) => (
+          <Col>
             <Fragment key={item.name}>
               <Card style={{ width: "18rem" }}>
                 <Card.Body>
-                <MyImages/>
+                    <Card.Img variant="top" src={images[itemImg].img}/>
                   <Card.Title>Nombre {item.name}</Card.Title>
                   <Card.Text>
                     Info Personaje.
@@ -93,23 +41,14 @@ const PersonajesContent = () => {
                 </Card.Body>
               </Card>
             </Fragment>
-          ))}
-        </>
+          </Col>
+        ))}
+      </Row>
       );
     }
   };
 
   return <div className="container">{mapData()}</div>;
-};
-
-const MyImages = () => {
-    return (
-        <>
-            {imagenes.map(item => (
-                <img alt="" width="250" src={images[item.img]} key={item.id} />
-            ))}
-        </>
-    );
 };
 
 export default PersonajesContent;
