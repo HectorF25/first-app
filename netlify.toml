@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/*"
-  to = "/personajes"
+  to = "/index.html"
   status = 200
 
 [[redirects]]
