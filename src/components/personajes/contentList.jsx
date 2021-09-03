@@ -23,7 +23,7 @@ const PersonajesContent = () => {
     if (data && data.length > 0) {
       return (
         <Row xs={1} md={4} className="g-4">
-        {data.map((item,itemImg,itemP) => (
+        {data.map((item,itemImg) => (
           <Col>
             <Fragment key={item.name}>
               <Card style={{ width: "18rem" }}>
