@@ -45,7 +45,7 @@ const Estuidantes = (props) => {
             />
           </Form.Group>
 
-		  <Form.Group className="mb-3" controlId="age">
+		  <Form.Group className="mb-3" controlId="gender">
             <Form.Label>Genero</Form.Label>
             {}
             <Form.Control
