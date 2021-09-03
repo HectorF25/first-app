@@ -21,7 +21,7 @@ const Content = (props) => {
           <Card.Body>
             <Card.Title>Estudiante {name}</Card.Title>
             <Card.Text>
-              Info estudiante.<br/>La edad es: {age}.<br/>El genero es: {gender}
+              Info estudiante.<br/>La edad es: {age}.<br/>El genero es: {gender}<br/>El estudiante es: {(age>=18)?"Mayor de edad" : "Menor de Edad"}
             </Card.Text>
           </Card.Body>
         </Card>
