@@ -19,7 +19,8 @@ const Content = (props) => {
             onChange={onChange}
           />
           <Card.Body>
-            <Card.Title>Estudiante {name}</Card.Title>
+            <Card.Title>Estudiante</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">{name}</Card.Subtitle>
             <Card.Text>
               Info estudiante.<br/>La edad es: {age}.<br/>El genero es: {gender}<br/>El estudiante es: {(age>=18)?"Mayor de edad" : "Menor de Edad"}
             </Card.Text>
