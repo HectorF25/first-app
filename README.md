@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live DEMO APP
+
+Open [https://react-app-starwars-api.netlify.app/personajes](https://react-app-starwars-api.netlify.app/personajes) to view it in the browser.
 ## Available Scripts
 
 In the project directory, you can run:
