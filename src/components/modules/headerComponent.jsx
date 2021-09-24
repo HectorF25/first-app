@@ -26,7 +26,7 @@ const HeaderComponent = () => {
               <Nav.Link href="/posts">Posts API</Nav.Link>
               <Nav.Link href="https://github.com/hectorf25" target="_blank">GitHub</Nav.Link>
             </Nav>
-          </Navbar.Collapse>s
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </header>
