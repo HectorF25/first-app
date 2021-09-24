@@ -23,9 +23,10 @@ const HeaderComponent = () => {
               <Nav.Link href="/personajes">Personajes</Nav.Link>
               <Nav.Link href="/personajesForm">Personajes Form</Nav.Link>
               <Nav.Link href="/contact">Contacto</Nav.Link>
+              <Nav.Link href="/posts">Posts API</Nav.Link>
               <Nav.Link href="https://github.com/hectorf25" target="_blank">GitHub</Nav.Link>
             </Nav>
-          </Navbar.Collapse>
+          </Navbar.Collapse>s
         </Container>
       </Navbar>
     </header>
