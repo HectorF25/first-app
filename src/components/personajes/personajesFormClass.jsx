@@ -82,10 +82,13 @@ class PersonajesFormClass extends React.Component {
     this.setState({ gender: e.target.value });
   }
 
-
   handleSubmit(e) {
     e.preventDefault();
-    if (this.state.name.length === 0 && this.state.age.length === 0 && this.state.gender.length === 0) {
+    if (
+      this.state.name.length === 0 &&
+      this.state.age.length === 0 &&
+      this.state.gender.length === 0
+    ) {
       return;
     }
     const newItem = {

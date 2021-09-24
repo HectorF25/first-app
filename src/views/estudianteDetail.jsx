@@ -1,21 +1,20 @@
 import React from "react";
+import EstudianteD from "../components/estudianteDetail";
 import FooterComponent from "../components/modules/footerComponent";
 import HeaderComponent from "../components/modules/headerComponent";
-import Personajes from "../components/personajes/contentList";
 import TitlePage from "../components/titleView";
 import "../assets/css/home.css";
 
-const PersonajesView = () => {
+function Home() {
   return (
     <>
       <HeaderComponent />
-      <TitlePage name="Personajes Star Wars" />
+      <TitlePage name="Home-Page" />
       <div className="contenedor">
-        <Personajes />
+        <EstudianteD />
       </div>
       <FooterComponent />
     </>
   );
-};
-
-export default PersonajesView;
+}
+export default Home;

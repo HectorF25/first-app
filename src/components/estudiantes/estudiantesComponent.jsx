@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from "react";
-import { Form, Button} from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
+
 const Estuidantes = (props) => {
   const { handleAddItem } = props;
   const [name, setName] = useState("");
@@ -45,7 +46,7 @@ const Estuidantes = (props) => {
             />
           </Form.Group>
 
-		  <Form.Group className="mb-3" controlId="gender">
+          <Form.Group className="mb-3" controlId="gender">
             <Form.Label>Genero</Form.Label>
             {}
             <Form.Control

@@ -9,7 +9,7 @@ function Contact() {
   return (
     <>
       <HeaderComponent />
-      <TitlePage name="Contact Form"/>
+      <TitlePage name="Contact Form" />
       <div className="contenedor">
         <ContactForm />
       </div>

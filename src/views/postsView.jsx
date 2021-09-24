@@ -1,21 +1,21 @@
 import React from "react";
 import FooterComponent from "../components/modules/footerComponent";
 import HeaderComponent from "../components/modules/headerComponent";
-import Personajes from "../components/personajes/contentList";
+import PostsContent from "../components/posts/postLists";
 import TitlePage from "../components/titleView";
 import "../assets/css/home.css";
 
-const PersonajesView = () => {
+const PostsView = () => {
   return (
     <>
       <HeaderComponent />
-      <TitlePage name="Personajes Star Wars" />
+      <TitlePage name="Posts-api" />
       <div className="contenedor">
-        <Personajes />
+        <PostsContent />
       </div>
       <FooterComponent />
     </>
   );
 };
 
-export default PersonajesView;
+export default PostsView;
